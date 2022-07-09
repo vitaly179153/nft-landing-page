@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slayers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <audio src="music.mp3" id="audio" loop></audio>
+    <header>
+      <a href="#" class="brand">Slayers</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <div class="slider-navigation" id="hidden">
+            <div class="nav-btn active"><a href="#" class="redbutton largebuttonwidthC">Home</a></div>
+            <a href="#" class="redbutton largebuttonwidthC">Dark Mountains</a>
+            <a  class="redbutton largebuttonwidthC" id="connectWallet">Wallet</a>
+            <a href="https://opensea.io/" class="redbutton largebuttonwidthC">Opensea</a>
+            <div class="nav-btn"><a href="#" class="redbutton largebuttonwidthC">Map</a></div>  
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <img class="video-slide active" src="back.jpg"/>
+      <img class="video-slide" src="map.jpg"/>
+      <video class="video-slide" src="WhatsApp Video 2022-07-06 at 4.47.09 PM.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="WhatsApp Video 2022-07-06 at 4.47.09 PM.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="WhatsApp Video 2022-07-06 at 4.47.09 PM.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <iframe id="iframe" style="display: none;" src="https://gateway.ipfscdn.io/ipfs/QmbEcsAGzZZZd7SHPoUGBcfTiuyzwGBzBmAHYt5ubTPqxB/nft-drop.html?contract=0x2F2C63595D43e6f3cf30E404CFD971907DEEfA95&chainId=4&theme=light&primaryColor=blue&secondaryColor=orange"
+          width="600px" height="600px" style="max-width:100%;" frameborder="0"></iframe>
+        <span id="div1" class="draggable" ondragover="allowDrop(event)">
+          <i class="fa fa-circle"  draggable="true" ondragstart="drag(event)" id="drag1"></i>
+        </span>
+        
+        <span id="div2" class="draggable" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+        <span id="div3" class="draggable" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
+      </div>
+      <div class="content">
+      </div>
+
+
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </section>
+
+    <section class="about section">
+      <div class="text-center">
+        <h2 class="mt-5 mb-5">FAQ</h2>
+      </div>
+      <section class="container my-5" id="maincontent">
+        <section id="accordion">
+          <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-17" aria-expanded="false" data-toggle="collapse" href="#faq-17" role="button">
+            <div class="position-relative">
+              <h2 class="h4 m-0 pr-3">
+                Is there any merch?
+              </h2>
+              <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center background">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="faq-17" style="">
+            <div class="card card-body border-0 p-0 background">
+              <p>not yet</p>
+    
+            </div>
+          </div>
+    
+          <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-18" aria-expanded="false" data-toggle="collapse" href="#faq-18" role="button">
+            <div class="position-relative">
+              <h2 class="h4 m-0 pr-3">
+                Is the nft free?
+              </h2>
+              <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center background">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="faq-18" style="">
+            <div class="card card-body border-0 p-0 background">
+              <p>eefg rrth rbrth rn tyhn tyn tntn ym tn tjnm tynm tn.</p>
+              <p>
+              </p>
+            </div>
+          </div>
+    
+          <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-19" aria-expanded="false" data-toggle="collapse" href="#faq-19" role="button">
+            <div class="position-relative">
+              <h2 class="h4 m-0 pr-3">
+                What is the purpose of Slayers?
+              </h2>
+              <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="faq-19" style="">
+            <div class="card card-body border-0 p-0 background">
+              <p>egege hrh r hrntrn tynt tymn ymymnymymy fhnr hn rf nvb</p>
+              <p>
+              </p>
+            </div>
+          </div>
+    
+          <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-20" aria-expanded="false" data-toggle="collapse" href="#faq-20" role="button">
+            <div class="position-relative">
+              <h2 class="h4 m-0 pr-3">
+                Where can I mint??
+              </h2>
+              <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="faq-20">
+            <div class="card card-body border-0 p-0 background">
+              <p>atrbrbr rbr trntn t tn tnt tmntym ytumyt mt</p>
+              <p>
+              </p>
+            </div>
+          </div>
+    
+          <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary  border-top" aria-controls="faq-21" aria-expanded="false" data-toggle="collapse" href="#faq-21" role="button">
+            <div class="position-relative">
+              <h2 class="h4 m-0 pr-3">
+                What is the roadmap?
+              </h2>
+              <div class="position-absolute top-0 right-0 h-100 d-flex align-items-center">
+                <i class="fa fa-plus"></i>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="faq-21">
+            <div class="card card-body border-0 p-0 background">
+              <p>tba</p>
+              <p>
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <div class="footer-dark background">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>Services</h3>
+                      <ul>
+                          <li><a href="https://twitter.com/slayers_ofgrln?s=20&t=3gBOEUzgVZxxMO91KWPaBA">Twitter</a></li>
+                          <li><a href="https://opensea.io/">Opensea</a></li>
+                          <li><a href="https://etherscan.io/">Etherscan</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 item text">
+                      <h3>Slayers</h3>
+                      <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                  </div>
+                  <div class="col item social"><a href="#"><i class="fab fa-discord"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-discord"></i></a><a href="#"><i class="fab fa-discord"></i></a></div>
+              </div>
+              <p class="copyright">Slayers © 2022</p>
+          </div>
+      </footer>
+  </div>
+
+    <script src="app.js"></script>
+    
+  </body>
+</html>
