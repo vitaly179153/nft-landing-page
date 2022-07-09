@@ -60,6 +60,13 @@ section{
   padding: 100px 200px;
 }
 
+.opensea {
+  background-image: url("opensea.webp");
+  background-position: center;
+  background-size: 25px;
+  background-repeat: no-repeat;
+}
+
 .redbutton {
   display: inline-block;
   outline: none;
