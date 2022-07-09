@@ -79,6 +79,7 @@ section{
 .largebuttonwidthC{
   width: 275px;
   min-height:140px;
+  margin-top: -25px;
 }
 
 .navigation {
