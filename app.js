@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const updateButton = async () => {
     if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
-      onboardButton.innerText = 'Install MetaMask!';
+      onboardButton.innerText = 'Wallet';
       onboardButton.onclick = () => {
         onboardButton.innerText = 'Connecting...';
         onboardButton.disabled = true;
