@@ -20,33 +20,38 @@
   <body>
     <audio src="music.mp3" id="audio" loop></audio>
 
+    
+    <!-- <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
     <header class="header">
       <div class="menu-btn"></div>
       <div class="navigation">
           <div class="slider-navigation" id="hidden">
-            <div class="nav-btn active"><a href="#"><img src="btnhome.png"/></a></div>
+            <div class="nav-btn active" onclick="homebtn()"><a href="#"><img src="btnhome.png"/></a></div>
             <a  href="#" ><img src="btndark.png"/></a>
             <a id="connectWallet"><img src="btnwallet.png"/></a>
             <a href="https://opensea.io/"><img src="btnsea.png"/></a>
-            <div class="nav-btn"><a href="#"><img src="btnmap.png"/></a></div>  
+            <div class="nav-btn" onclick="mapbtn()"><a href="#"><img src="btnmap.png"/></a></div>  
         </div>
       </div>
     </header>
 
     <section class="home">
-      <img class="video-slide active" src="back.jpg"/>
+      <video class="video-slide active" src="video.mp4" autoplay muted loop></video>
       <img class="video-slide" src="map.jpg"/>
       <video class="video-slide" src="WhatsApp Video 2022-07-06 at 4.47.09 PM.mp4" autoplay muted loop></video>
       <video class="video-slide" src="WhatsApp Video 2022-07-06 at 4.47.09 PM.mp4" autoplay muted loop></video>
       <video class="video-slide" src="WhatsApp Video 2022-07-06 at 4.47.09 PM.mp4" autoplay muted loop></video>
-      <div class="content active">
+      <div class="content active">    
+  
         <iframe id="iframe" style="display: none;" src="https://gateway.ipfscdn.io/ipfs/QmbEcsAGzZZZd7SHPoUGBcfTiuyzwGBzBmAHYt5ubTPqxB/nft-drop.html?contract=0x2F2C63595D43e6f3cf30E404CFD971907DEEfA95&chainId=4&theme=light&primaryColor=blue&secondaryColor=orange"
           width="600px" height="600px" style="max-width:100%;" frameborder="0"></iframe>
       </div>
       <div class="content">
       </div>
 
-
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" class="outer">
+          <i draggable="true" ondragstart="drag(event)" class="inner  fas fa-circle"></i>
+        </div>
       <div class="media-icons">
         <a href="https://twitter.com/slayers_ofgrln?s=20&t=DBdwQpL7_afN8Y3qDiF1kQ"><i class="fab fa-twitter drag"></i></a>
         <a href="https://opensea.io" class="opensea"><i class="fab"></i></a>

@@ -194,6 +194,15 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 
+function mapbtn() {
+  document.getElementById('div1').style.display = "none";
+}
+
+function homebtn() {
+  setTimeout(() => {
+    document.getElementById('div1').style.display = "block";
+  }, "900")
+}
 
 
  
