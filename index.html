@@ -19,17 +19,16 @@
   </head>
   <body>
     <audio src="music.mp3" id="audio" loop></audio>
-    <header>
+
+    <header class="header">
       <div class="menu-btn"></div>
       <div class="navigation">
-        <div class="navigation-items">
           <div class="slider-navigation" id="hidden">
-            <div class="nav-btn active"><a href="#" class="redbutton largebuttonwidthC">Home</a></div>
-            <a  href="#" class="redbutton largebuttonwidthC">Dark Mountains</a>
-            <a  class="redbutton largebuttonwidthC" id="connectWallet">Wallet</a>
-            <a href="https://opensea.io/" class="redbutton largebuttonwidthC">Opensea</a>
-            <div class="nav-btn"><a href="#" class="redbutton largebuttonwidthC">Map</a></div>  
-          </div>
+            <div class="nav-btn active"><a href="#"><img src="btnhome.png"/></a></div>
+            <a  href="#" ><img src="btndark.png"/></a>
+            <a id="connectWallet"><img src="btnwallet.png"/></a>
+            <a href="https://opensea.io/"><img src="btnsea.png"/></a>
+            <div class="nav-btn"><a href="#"><img src="btnmap.png"/></a></div>  
         </div>
       </div>
     </header>
@@ -43,19 +42,13 @@
       <div class="content active">
         <iframe id="iframe" style="display: none;" src="https://gateway.ipfscdn.io/ipfs/QmbEcsAGzZZZd7SHPoUGBcfTiuyzwGBzBmAHYt5ubTPqxB/nft-drop.html?contract=0x2F2C63595D43e6f3cf30E404CFD971907DEEfA95&chainId=4&theme=light&primaryColor=blue&secondaryColor=orange"
           width="600px" height="600px" style="max-width:100%;" frameborder="0"></iframe>
-        <span id="div1" class="draggable" ondragover="allowDrop(event)">
-          <i class="fa fa-circle"  draggable="true" ondragstart="drag(event)" id="drag1"></i>
-        </span>
-        
-        <span id="div2" class="draggable" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
-        <span id="div3" class="draggable" ondrop="drop(event)" ondragover="allowDrop(event)"></span>
       </div>
       <div class="content">
       </div>
 
 
       <div class="media-icons">
-        <a href="https://twitter.com/slayers_ofgrln?s=20&t=DBdwQpL7_afN8Y3qDiF1kQ"><i class="fab fa-twitter"></i></a>
+        <a href="https://twitter.com/slayers_ofgrln?s=20&t=DBdwQpL7_afN8Y3qDiF1kQ"><i class="fab fa-twitter drag"></i></a>
         <a href="https://opensea.io" class="opensea"><i class="fab"></i></a>
         <a href="https://etherscan.io"><i class="fab fa-ethereum"></i></a>
       </div>

@@ -11,7 +11,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const updateButton = async () => {
     if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
-      onboardButton.innerText = 'Wallet';
       onboardButton.onclick = () => {
         onboardButton.innerText = 'Connecting...';
         onboardButton.disabled = true;
@@ -23,7 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
       onboarding.stopOnboarding();
       checkOwner(accounts[0]);
     } else {
-      onboardButton.innerText = 'Wallet';
       onboardButton.onclick = async () => {
         await window.ethereum.request({
           method: 'eth_requestAccounts',
@@ -136,14 +134,6 @@ async function fetchWithRetry(url)  {
 
 
 
-//Javacript for responsive navigation menu
-const menuBtn = document.querySelector(".menu-btn");
-const navigation = document.querySelector(".navigation");
-
-menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("active");
-    navigation.classList.toggle("active");
-});
 
 //Javacript for video slider navigation
 const btns = document.querySelectorAll(".nav-btn");
@@ -174,26 +164,7 @@ btns.forEach((btn, i) => {
     });
 });
 
-
-//drag & drop
-function allowDrop(ev) {
-    ev.preventDefault();
-}
-
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-    document.getElementById("div1").style.color = "black";
-
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-    document.getElementById("div1").style.color = "rgba(240, 128, 128, 0)"
-    document.getElementById("iframe").style.display = "block"
-}
-
+//music
 window.addEventListener("DOMContentLoaded", event => {
     const audio = document.querySelector("audio");
     audio.volume = 0.2;
@@ -205,23 +176,23 @@ window.addEventListener("click", () => {
 });
 
 
-jQuery(document).ready(function($) {
-    var alterClass = function() {
-      var ww = document.body.clientWidth;
-      if (ww < 600) {
-        $('#hidden').removeClass('slider-navigation');
-      } else if (ww >= 601) {
-        $('#hidden').addClass('slider-navigation');
-      };
-    };
-    $(window).resize(function(){
-      alterClass();
-    });
-    //Fire it when the page first loads:
-    alterClass();
-  });
 
 
+
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
 
 
 

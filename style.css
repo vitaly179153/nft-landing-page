@@ -7,55 +7,6 @@
   font-family: 'MedievalSharp';font-size: 22px;
 }
 
-header{
-  z-index: 999;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 200px;
-  transition: 0.5s ease;
-}
-
-header .brand{
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-header .navigation{
-  position: relative;
-}
-
-header .navigation .navigation-items a{
-  position: relative;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 500;
-  text-decoration: none;
-  margin-left: 30px;
-  transition: 0.3s ease;
-}
-
-header .navigation .navigation-items a:before{
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  transition: 0.3s ease;
-}
-
-header .navigation .navigation-items a:hover:before{
-  width: 100%;
-}
-
 section{
   padding: 100px 200px;
 }
@@ -67,32 +18,9 @@ section{
   background-repeat: no-repeat;
 }
 
-.redbutton {
-  display: inline-block;
-  outline: none;
-  cursor: pointer;
-
-  padding: 30px 6px 15px 22px;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;    
-  cursor: pointer; cursor: hand;
-  text-decoration: none;
-  text-shadow: 0 1px 1px rgba(0,0,0,.3);
-  background: url(btn.png) no-repeat;
-  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');    
-}
-.largebuttonwidthC{
-  width: 275px;
-  min-height:140px;
-  margin-top: -25px;
-}
-
 .navigation {
-  margin-bottom: 180px;
-  margin-top: -80px;
-  right: 3%;
+  background-color: rgb(80, 4, 4);
+  padding: 20px;
 }
 
 
@@ -216,72 +144,22 @@ section{
   height: 100%;
 }
 
-#div1, #div2, #div3 {
-  display: flex;
-  justify-content: center;
-  float: center;
-  width: 100px;
-  height: 35px;
-  margin: 10px;
-  padding: 10px;
-  background-color: rgba(240, 128, 128, 0);
-  color: rgba(0, 0, 0, 0);
-  position: absolute;
-}
 
-#div1 {
-  top: 55.8%;
-  left: 46%;
-}
-
-#div2 {
-  top: 46%;
-  left: 71.2%;
-}
-
-#div3 {
-  top: 46%;
-  left: 22.5%;
-}
-
-.draggable {
-  cursor: url("https://www.google.com/intl/en_ALL/mapfiles/openhand.cur"), all-scroll;
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: -o-grab;
-  cursor: -ms-grab;
-  cursor: grab;
-}
-
-.draggable :active {
-  cursor: url("https://www.google.com/intl/en_ALL/mapfiles/closedhand.cur"), all-scroll;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: -o-grabbing;
-  cursor: -ms-grabbing;
-  cursor: grabbing;
-}
 .slider-navigation{
   z-index: 888;
   position: relative;
   display: flex;
   justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  transform: translateY(80px);
+  color: #fff;
+  text-decoration: none;
 
 }
 
 .slider-navigation .nav-btn{
-  
-  background: rgba(255, 255, 255, 0);
-  border-radius: 50%;
   cursor: pointer;
-  
   transition: 0.3s ease;
-}
-
-.slider-navigation .nav-btn.active{
-  background: rgba(139, 0, 0, 0);
 }
 
 .slider-navigation .nav-btn:hover{
@@ -299,30 +177,10 @@ section{
   transition: 2s ease;
   transition-property: clip-path;
 }
-@media (max-width: 1800px) {
-  #div1, #div2 #div3{
-    display: none;
-  }
-}
 
-@media (max-height: 900px) {
-  #div1, #div2 {
-    display: none;
-  }
-}
+
 
 @media (max-width: 1040px){
-  #div1, #div2 #div3{
-    display: none;
-  }
-  header{
-    padding: 12px 20px;
-  }
-
-  #div1, #div2 {
-    display: none;
-  }
-
   .home img{
     z-index: 000;
     position: absolute;
@@ -339,64 +197,6 @@ section{
 
   .home .media-icons{
     right: 15px;
-  }
-
-  header .navigation{
-    display: none;
-  }
-
-  header .navigation.active{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(1, 1, 1, 0.5);
-  }
-
-  header .navigation .navigation-items a{
-    color: #222;
-    font-size: 1.2em;
-    margin: 20px;
-  }
-
-  header .navigation .navigation-items a:before{
-    
-    height: 5px;
-  }
-
-  header .navigation.active .navigation-items{
-    background: #fff;
-    width: 600px;
-    max-width: 600px;
-    margin: 20px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-  }
-
-  .menu-btn{
-    background: url(menu.png)no-repeat;
-    background-size: 30px;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-
-  .menu-btn.active{
-    z-index: 999;
-    background: url(close.png)no-repeat;
-    background-size: 25px;
-    background-position: center;
-    transition: 0.3s ease;
   }
 }
 
@@ -729,6 +529,21 @@ figcaption {
 }
 
 
+.slider-navigation a {
+  color: white;
+}
 
+.slider-navigation:before{
+  z-index: 888;
+  content: '';
+  position: absolute;
+  width: 160%;
+  height: 50px;
+  top: 120%;
+  bottom: 0;
+  left: -10%;
+  background: linear-gradient(transparent,rgb(80, 4, 4));
+  transform: rotate(3.142rad);
+}
 
 
